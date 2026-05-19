@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}MindPulse{% endblock %} — SDG 3 Mental Health App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo">MindPulse</a>
+            <nav>
+                <a href="/">Check In</a>
+                <a href="/history">History</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>MindPulse &mdash; SDG 3: Good Health &amp; Well-being</p>
+            <p class="brand">iTaqiZ | Pakistan</p>
+        </div>
+    </footer>
+</body>
+</html>

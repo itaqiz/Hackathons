@@ -1,0 +1,325 @@
+/* MindPulse — SDG 3 Mental Health App
+   iTaqiZ | Pakistan
+   ----------------------------------- */
+
+:root {
+    --navy:   #0B1F3B;
+    --cyan:   #00C2FF;
+    --white:  #FFFFFF;
+    --gray-bg: #F5F7FA;
+    --text-primary: #111827;
+    --text-secondary: #6B7280;
+    --border: #E5E7EB;
+    --radius: 8px;
+    --font: 'Inter', 'Segoe UI', system-ui, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: var(--font);
+    background: var(--gray-bg);
+    color: var(--text-primary);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* ── Header ── */
+.site-header {
+    background: var(--navy);
+    padding: 16px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.site-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: var(--cyan);
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+
+nav a {
+    color: rgba(255,255,255,0.75);
+    text-decoration: none;
+    margin-left: 24px;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+nav a:hover { color: var(--cyan); }
+
+/* ── Main ── */
+main {
+    flex: 1;
+    padding: 48px 24px;
+}
+
+/* ── Hero ── */
+.hero {
+    margin-bottom: 40px;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: var(--text-secondary);
+    font-size: 1rem;
+}
+
+/* ── Form ── */
+.checkin-form {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 32px;
+    margin-bottom: 32px;
+}
+
+.form-group {
+    margin-bottom: 24px;
+}
+
+label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+}
+
+.rating-hint {
+    font-weight: 700;
+    color: var(--cyan);
+    font-size: 0.9rem;
+}
+
+textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    font-family: var(--font);
+    font-size: 0.95rem;
+    color: var(--text-primary);
+    resize: vertical;
+    transition: border-color 0.2s;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: var(--cyan);
+}
+
+input[type="range"] {
+    width: 100%;
+    accent-color: var(--cyan);
+    height: 6px;
+    cursor: pointer;
+}
+
+.rating-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.78rem;
+    color: var(--text-secondary);
+    margin-top: 4px;
+}
+
+/* ── Buttons ── */
+.btn-primary {
+    display: inline-block;
+    background: var(--navy);
+    color: var(--white);
+    padding: 12px 28px;
+    border-radius: var(--radius);
+    border: none;
+    font-family: var(--font);
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.btn-primary:hover { background: #0d2a52; }
+
+.btn-secondary {
+    display: inline-block;
+    border: 1.5px solid var(--navy);
+    color: var(--navy);
+    padding: 12px 28px;
+    border-radius: var(--radius);
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 12px;
+    transition: all 0.2s;
+}
+
+.btn-secondary:hover { background: var(--navy); color: var(--white); }
+
+/* ── SDG Note ── */
+.sdg-note {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    padding: 16px;
+    border-top: 1px solid var(--border);
+}
+
+/* ── Result ── */
+.result-section { max-width: 600px; }
+.result-section h1 { font-size: 1.75rem; margin-bottom: 24px; color: var(--navy); }
+
+.mood-card {
+    background: var(--white);
+    border-left: 4px solid var(--cyan);
+    border-radius: var(--radius);
+    padding: 24px 28px;
+    margin-bottom: 24px;
+}
+
+.mood-card.mood-excellent { border-left-color: #10B981; }
+.mood-card.mood-good      { border-left-color: #3B82F6; }
+.mood-card.mood-neutral   { border-left-color: #F59E0B; }
+.mood-card.mood-low       { border-left-color: #F97316; }
+.mood-card.mood-critical  { border-left-color: #EF4444; }
+
+.mood-label {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--navy);
+}
+
+.mood-score, .mood-rating {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-top: 4px;
+}
+
+.tip-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 24px 28px;
+    margin-bottom: 24px;
+}
+
+.tip-card h2 {
+    font-size: 1rem;
+    color: var(--cyan);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 10px;
+}
+
+.tip-card p { font-size: 1rem; line-height: 1.7; }
+
+.input-echo {
+    margin-bottom: 32px;
+}
+
+.input-echo h3 {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    letter-spacing: 0.08em;
+    margin-bottom: 8px;
+}
+
+blockquote {
+    border-left: 3px solid var(--border);
+    padding-left: 16px;
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+.actions { margin-top: 8px; }
+
+/* ── History ── */
+.history-section h1 { font-size: 1.75rem; color: var(--navy); margin-bottom: 8px; }
+
+.history-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 24px;
+    background: var(--white);
+    border-radius: var(--radius);
+    overflow: hidden;
+    font-size: 0.875rem;
+}
+
+.history-table th {
+    background: var(--navy);
+    color: var(--white);
+    padding: 12px 16px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.history-table td {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+}
+
+.history-table tr:last-child td { border-bottom: none; }
+.history-table tr:hover td { background: var(--gray-bg); }
+
+.ts { color: var(--text-secondary); white-space: nowrap; font-size: 0.8rem; }
+
+.mood-cell { font-weight: 700; }
+.mood-cell.mood-excellent { color: #10B981; }
+.mood-cell.mood-good      { color: #3B82F6; }
+.mood-cell.mood-neutral   { color: #F59E0B; }
+.mood-cell.mood-low       { color: #F97316; }
+.mood-cell.mood-critical  { color: #EF4444; }
+
+.empty-state {
+    text-align: center;
+    padding: 48px 0;
+    color: var(--text-secondary);
+}
+
+.empty-state a { color: var(--cyan); }
+
+/* ── Footer ── */
+.site-footer {
+    background: var(--navy);
+    color: rgba(255,255,255,0.5);
+    padding: 24px 0;
+    text-align: center;
+    font-size: 0.82rem;
+    margin-top: auto;
+}
+
+.site-footer .brand {
+    color: var(--cyan);
+    font-weight: 600;
+    margin-top: 4px;
+    letter-spacing: 0.05em;
+}

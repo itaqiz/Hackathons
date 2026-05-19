@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block title %}Daily Check-In{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <h1>How are you feeling today?</h1>
+    <p class="subtitle">
+        A daily mental health check-in. Takes 30 seconds. Builds awareness over time.
+    </p>
+</section>
+
+<section class="checkin-form">
+    <form action="/checkin" method="POST">
+
+        <div class="form-group">
+            <label for="mood_text">Describe your mood in a few words</label>
+            <textarea
+                id="mood_text"
+                name="mood_text"
+                rows="3"
+                placeholder="e.g. feeling stressed about deadlines, but hopeful..."
+                required
+            ></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="rating">
+                Rate your well-being today
+                <span class="rating-hint" id="rating-display">5 / 10</span>
+            </label>
+            <input
+                type="range"
+                id="rating"
+                name="rating"
+                min="1"
+                max="10"
+                value="5"
+                oninput="document.getElementById('rating-display').textContent = this.value + ' / 10'"
+            />
+            <div class="rating-labels">
+                <span>1 — Very Poor</span>
+                <span>10 — Excellent</span>
+            </div>
+        </div>
+
+        <button type="submit" class="btn-primary">Submit Check-In</button>
+    </form>
+</section>
+
+<section class="sdg-note">
+    <p>
+        This app supports
+        <strong>UN SDG 3: Good Health &amp; Well-being</strong> —
+        promoting mental wellness through daily self-reflection.
+    </p>
+</section>
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Your Result{% endblock %}
+
+{% block content %}
+<section class="result-section">
+    <h1>Your Check-In Result</h1>
+
+    <div class="mood-card mood-{{ mood | lower }}">
+        <div class="mood-label">{{ mood }}</div>
+        <div class="mood-score">Score: {{ score }}</div>
+        <div class="mood-rating">Self-Rating: {{ rating }} / 10</div>
+    </div>
+
+    <div class="tip-card">
+        <h2>Wellness Tip</h2>
+        <p>{{ tip }}</p>
+    </div>
+
+    <div class="input-echo">
+        <h3>You said:</h3>
+        <blockquote>{{ user_input }}</blockquote>
+    </div>
+
+    <div class="actions">
+        <a href="/" class="btn-primary">Check In Again</a>
+        <a href="/history" class="btn-secondary">View History</a>
+    </div>
+</section>
+{% endblock %}

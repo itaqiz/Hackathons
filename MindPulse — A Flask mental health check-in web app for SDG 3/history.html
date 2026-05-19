@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}Mood History{% endblock %}
+
+{% block content %}
+<section class="history-section">
+    <h1>Your Mood History</h1>
+    <p class="subtitle">Last 20 check-ins — track your mental wellness over time.</p>
+
+    {% if entries %}
+    <table class="history-table">
+        <thead>
+            <tr>
+                <th>Timestamp</th>
+                <th>What You Said</th>
+                <th>Rating</th>
+                <th>Mood</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for entry in entries %}
+            <tr>
+                <td class="ts">{{ entry.timestamp }}</td>
+                <td class="input-cell">{{ entry.user_input }}</td>
+                <td class="rating-cell">{{ entry.rating }} / 10</td>
+                <td class="mood-cell mood-{{ entry.mood_label | lower }}">{{ entry.mood_label }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% else %}
+    <div class="empty-state">
+        <p>No entries yet. <a href="/">Complete your first check-in.</a></p>
+    </div>
+    {% endif %}
+</section>
+{% endblock %}
