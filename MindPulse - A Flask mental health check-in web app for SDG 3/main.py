@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for
-from app.analyzer import analyze_mood
-from app.recommender import get_recommendation
-from app.logger import log_entry, get_history
+from analyzer import analyze_mood
+from recommender import get_recommendation
+from logger import log_entry, get_history
 
 app = Flask(__name__)
 
