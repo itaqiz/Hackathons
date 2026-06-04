@@ -77,7 +77,8 @@ Each agent maintains its **own independent conversation history**, so switching 
 
 **1. Clone the repository**
 ```bash
-
+git clone https://github.com/itaqiz/Hackathons.git 
+cd Hackathons/AgentVerse
 ```
 
 **2. Install dependencies**
