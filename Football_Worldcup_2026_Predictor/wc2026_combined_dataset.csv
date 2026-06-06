@@ -1,0 +1,105 @@
+match_id,phase,round,multiplier,group,home_team,away_team,date,venue,predicted_home_goals,predicted_away_goals,winning_team,match_winner,corners,yellow_cards,red_cards,penalties,home_xg,away_xg,home_strength,away_strength,predicted_home_team,predicted_away_team
+1,Group,Group stage,1,A,Mexico,South Africa,2026-06-11,Estadio Azteca Mexico City,1,0,home,,9,3,0,,1.44,0.78,7.0,5.6,Mexico,South Africa
+2,Group,Group stage,1,A,Korea Republic,Czechia,2026-06-12,Estadio Akron Guadalajara,1,1,draw,,9,4,0,,1.32,0.95,7.1,6.0,Korea Republic,Czechia
+25,Group,Group stage,1,A,Czechia,South Africa,2026-06-18,Mercedes-Benz Stadium Atlanta,1,0,home,,8,3,0,,1.21,0.87,6.0,5.6,Czechia,South Africa
+27,Group,Group stage,1,A,Mexico,Korea Republic,2026-06-19,Estadio Azteca Mexico City,1,1,draw,,9,4,0,,1.37,1.31,7.0,7.1,Mexico,Korea Republic
+51,Group,Group stage,1,A,South Africa,Korea Republic,2026-06-25,Estadio BBVA Monterrey,0,2,away,,8,3,0,,0.78,1.42,5.6,7.1,South Africa,Korea Republic
+53,Group,Group stage,1,A,Czechia,Mexico,2026-06-25,Estadio Azteca Mexico City,0,1,away,,9,3,0,,0.93,1.21,6.0,7.0,Czechia,Mexico
+3,Group,Group stage,1,B,Canada,Bosnia and Herzegovina,2026-06-12,BMO Field Toronto,1,0,home,,9,3,0,,1.44,0.98,7.5,5.9,Canada,Bosnia and Herzegovina
+8,Group,Group stage,1,B,Qatar,Switzerland,2026-06-13,Levis Stadium Santa Clara,0,1,away,,8,3,0,,0.85,1.32,5.3,7.2,Qatar,Switzerland
+26,Group,Group stage,1,B,Switzerland,Bosnia and Herzegovina,2026-06-18,SoFi Stadium Los Angeles,2,0,home,,9,3,0,,1.74,0.72,7.2,5.9,Switzerland,Bosnia and Herzegovina
+44,Group,Group stage,1,B,Canada,Qatar,2026-06-19,BC Place Vancouver,2,0,home,,9,3,0,,1.88,0.59,7.5,5.3,Canada,Qatar
+52,Group,Group stage,1,B,Bosnia and Herzegovina,Qatar,2026-06-25,Lumen Field Seattle,1,0,home,,8,3,0,,1.08,0.88,5.9,5.3,Bosnia and Herzegovina,Qatar
+70,Group,Group stage,1,B,Switzerland,Canada,2026-06-25,BC Place Vancouver,1,1,draw,,9,4,0,,1.29,1.39,7.2,7.5,Switzerland,Canada
+7,Group,Group stage,1,C,Brazil,Morocco,2026-06-13,MetLife Stadium East Rutherford,1,0,home,,10,3,0,,1.74,0.94,9.5,7.5,Brazil,Morocco
+5,Group,Group stage,1,C,Haiti,Scotland,2026-06-14,Gillette Stadium Foxborough,0,1,away,,8,3,0,,0.72,0.98,5.1,6.6,Haiti,Scotland
+28,Group,Group stage,1,C,Brazil,Haiti,2026-06-20,Lincoln Financial Field Philadelphia,4,0,home,,10,3,0,,2.98,0.34,9.5,5.1,Brazil,Haiti
+29,Group,Group stage,1,C,Scotland,Morocco,2026-06-19,Gillette Stadium Foxborough,0,1,away,,9,4,0,,0.94,1.12,6.6,7.5,Scotland,Morocco
+47,Group,Group stage,1,C,Morocco,Haiti,2026-06-26,MetLife Stadium East Rutherford,2,0,home,,9,3,0,,1.94,0.49,7.5,5.1,Morocco,Haiti
+50,Group,Group stage,1,C,Scotland,Brazil,2026-06-26,Gillette Stadium Foxborough,0,2,away,,10,3,0,,0.62,2.18,6.6,9.5,Scotland,Brazil
+4,Group,Group stage,1,D,United States,Paraguay,2026-06-12,SoFi Stadium Los Angeles,1,1,draw,,9,4,0,,1.28,1.14,7.3,6.1,United States,Paraguay
+6,Group,Group stage,1,D,Australia,Türkiye,2026-06-13,ATT Stadium Arlington,1,1,draw,,9,4,0,,1.21,1.21,6.4,7.5,Australia,Türkiye
+30,Group,Group stage,1,D,United States,Australia,2026-06-19,SoFi Stadium Los Angeles,1,0,home,,9,3,0,,1.38,0.96,7.3,6.4,United States,Australia
+31,Group,Group stage,1,D,Türkiye,Paraguay,2026-06-18,Hard Rock Stadium Miami,2,0,home,,9,3,0,,1.74,0.73,7.5,6.1,Türkiye,Paraguay
+58,Group,Group stage,1,D,Paraguay,Australia,2026-06-26,Commanders Field Washington DC,1,1,draw,,8,4,0,,1.14,1.07,6.1,6.4,Paraguay,Australia
+59,Group,Group stage,1,D,Türkiye,United States,2026-06-26,ATT Stadium Arlington,1,1,draw,,9,4,0,,1.38,1.28,7.5,7.3,Türkiye,United States
+10,Group,Group stage,1,E,Germany,Curaçao,2026-06-14,MetLife Stadium East Rutherford,2,0,home,,10,3,0,,2.63,0.38,8.6,4.5,Germany,Curaçao
+9,Group,Group stage,1,E,Côte d'Ivoire,Ecuador,2026-06-14,Arrowhead Stadium Kansas City,1,1,draw,,9,4,0,,1.22,1.22,7.0,7.0,Côte d'Ivoire,Ecuador
+34,Group,Group stage,1,E,Germany,Côte d'Ivoire,2026-06-20,Gillette Stadium Foxborough,2,0,home,,10,3,0,,1.87,0.74,8.6,7.0,Germany,Côte d'Ivoire
+36,Group,Group stage,1,E,Ecuador,Curaçao,2026-06-19,Rose Bowl Pasadena,2,0,home,,9,3,0,,2.24,0.37,7.0,4.5,Ecuador,Curaçao
+49,Group,Group stage,1,E,Ecuador,Germany,2026-06-25,MetLife Stadium East Rutherford,0,2,away,,10,3,0,,0.74,1.87,7.0,8.6,Ecuador,Germany
+56,Group,Group stage,1,E,Curaçao,Côte d'Ivoire,2026-06-25,Arrowhead Stadium Kansas City,0,2,away,,8,3,0,,0.38,1.98,4.5,7.0,Curaçao,Côte d'Ivoire
+11,Group,Group stage,1,F,Netherlands,Japan,2026-06-15,Lincoln Financial Field Philadelphia,1,1,draw,,10,4,0,,1.48,1.14,8.2,7.1,Netherlands,Japan
+12,Group,Group stage,1,F,Sweden,Tunisia,2026-06-15,Lumen Field Seattle,2,0,home,,9,3,0,,1.78,0.72,7.5,6.0,Sweden,Tunisia
+32,Group,Group stage,1,F,Tunisia,Japan,2026-06-20,Lumen Field Seattle,0,1,away,,8,3,0,,0.84,1.18,6.0,7.1,Tunisia,Japan
+35,Group,Group stage,1,F,Netherlands,Sweden,2026-06-20,Lincoln Financial Field Philadelphia,1,0,home,,10,4,0,,1.48,1.22,8.2,7.5,Netherlands,Sweden
+55,Group,Group stage,1,F,Tunisia,Netherlands,2026-06-26,Rose Bowl Pasadena,0,2,away,,9,3,0,,0.58,1.96,6.0,8.2,Tunisia,Netherlands
+57,Group,Group stage,1,F,Japan,Sweden,2026-06-26,Lumen Field Seattle,0,1,away,,9,4,0,,1.12,1.38,7.1,7.5,Japan,Sweden
+16,Group,Group stage,1,G,Belgium,Egypt,2026-06-16,ATT Stadium Arlington,1,1,draw,,9,4,0,,1.38,1.14,8.0,7.0,Belgium,Egypt
+15,Group,Group stage,1,G,IR Iran,New Zealand,2026-06-16,Arrowhead Stadium Kansas City,1,0,home,,8,3,0,,1.21,0.72,6.1,4.9,IR Iran,New Zealand
+39,Group,Group stage,1,G,New Zealand,Egypt,2026-06-22,Lumen Field Seattle,0,2,away,,8,3,0,,0.54,1.32,4.9,7.0,New Zealand,Egypt
+43,Group,Group stage,1,G,Belgium,IR Iran,2026-06-21,ATT Stadium Arlington,2,0,home,,9,3,0,,1.98,0.58,8.0,6.1,Belgium,IR Iran
+60,Group,Group stage,1,G,New Zealand,Belgium,2026-06-27,Lumen Field Seattle,0,3,away,,9,3,0,,0.46,2.14,4.9,8.0,New Zealand,Belgium
+63,Group,Group stage,1,G,Egypt,IR Iran,2026-06-27,Hard Rock Stadium Miami,2,0,home,,9,3,0,,1.68,0.84,7.0,6.1,Egypt,IR Iran
+14,Group,Group stage,1,H,Spain,Cabo Verde,2026-06-15,Hard Rock Stadium Miami,3,0,home,,10,3,0,,2.74,0.39,9.0,5.1,Spain,Cabo Verde
+13,Group,Group stage,1,H,Saudi Arabia,Uruguay,2026-06-15,Commanders Field Washington DC,0,1,away,,9,3,0,,0.72,1.48,5.9,7.9,Saudi Arabia,Uruguay
+37,Group,Group stage,1,H,Spain,Saudi Arabia,2026-06-21,ATT Stadium Arlington,2,0,home,,10,3,0,,2.24,0.48,9.0,5.9,Spain,Saudi Arabia
+46,Group,Group stage,1,H,Uruguay,Cabo Verde,2026-06-20,Hard Rock Stadium Miami,2,0,home,,9,3,0,,2.04,0.48,7.9,5.1,Uruguay,Cabo Verde
+64,Group,Group stage,1,H,Cabo Verde,Saudi Arabia,2026-06-27,Commanders Field Washington DC,1,1,draw,,8,4,0,,0.98,0.87,5.1,5.9,Cabo Verde,Saudi Arabia
+65,Group,Group stage,1,H,Uruguay,Spain,2026-06-27,Arrowhead Stadium Kansas City,0,1,away,,10,4,0,,1.18,1.62,7.9,9.0,Uruguay,Spain
+17,Group,Group stage,1,I,France,Senegal,2026-06-16,MetLife Stadium East Rutherford,1,0,home,,10,3,0,,1.88,0.87,9.3,6.8,France,Senegal
+18,Group,Group stage,1,I,Iraq,Norway,2026-06-16,Arrowhead Stadium Kansas City,0,2,away,,8,3,0,,0.48,1.98,5.4,8.0,Iraq,Norway
+33,Group,Group stage,1,I,Norway,Senegal,2026-06-21,Arrowhead Stadium Kansas City,2,0,home,,9,3,0,,1.87,0.78,8.0,6.8,Norway,Senegal
+42,Group,Group stage,1,I,France,Iraq,2026-06-21,MetLife Stadium East Rutherford,3,0,home,,10,3,0,,2.98,0.34,9.3,5.4,France,Iraq
+62,Group,Group stage,1,I,Senegal,Iraq,2026-06-27,Levis Stadium Santa Clara,2,0,home,,9,3,0,,1.88,0.58,6.8,5.4,Senegal,Iraq
+66,Group,Group stage,1,I,Norway,France,2026-06-27,Arrowhead Stadium Kansas City,0,1,away,,9,3,0,,1.38,1.72,8.0,9.3,Norway,France
+19,Group,Group stage,1,J,Argentina,Algeria,2026-06-17,Hard Rock Stadium Miami,2,0,home,,10,3,0,,2.14,0.58,9.0,6.5,Argentina,Algeria
+20,Group,Group stage,1,J,Austria,Jordan,2026-06-17,Rose Bowl Pasadena,2,0,home,,9,3,0,,1.88,0.64,6.8,4.8,Austria,Jordan
+38,Group,Group stage,1,J,Argentina,Austria,2026-06-22,Hard Rock Stadium Miami,1,0,home,,10,3,0,,1.78,0.94,9.0,6.8,Argentina,Austria
+40,Group,Group stage,1,J,Jordan,Algeria,2026-06-22,Rose Bowl Pasadena,0,1,away,,8,3,0,,0.68,0.94,4.8,6.5,Jordan,Algeria
+69,Group,Group stage,1,J,Jordan,Argentina,2026-06-28,Rose Bowl Pasadena,0,3,away,,9,3,0,,0.38,2.64,4.8,9.0,Jordan,Argentina
+71,Group,Group stage,1,J,Algeria,Austria,2026-06-27,Commanders Field Washington DC,1,1,draw,,9,4,0,,0.98,1.02,6.5,6.8,Algeria,Austria
+23,Group,Group stage,1,K,Portugal,Congo DR,2026-06-18,Arrowhead Stadium Kansas City,2,0,home,,9,3,0,,2.14,0.58,8.5,5.8,Portugal,Congo DR
+24,Group,Group stage,1,K,Uzbekistan,Colombia,2026-06-18,Commanders Field Washington DC,0,2,away,,8,3,0,,0.58,1.98,5.0,7.9,Uzbekistan,Colombia
+48,Group,Group stage,1,K,Colombia,Congo DR,2026-06-22,Arrowhead Stadium Kansas City,2,0,home,,9,3,0,,1.98,0.58,7.9,5.8,Colombia,Congo DR
+54,Group,Group stage,1,K,Portugal,Uzbekistan,2026-06-22,Commanders Field Washington DC,3,0,home,,9,3,0,,2.64,0.38,8.5,5.0,Portugal,Uzbekistan
+68,Group,Group stage,1,K,Colombia,Portugal,2026-06-28,Mercedes-Benz Stadium Atlanta,0,1,away,,10,4,0,,0.94,1.34,7.9,8.5,Colombia,Portugal
+72,Group,Group stage,1,K,Congo DR,Uzbekistan,2026-06-28,Arrowhead Stadium Kansas City,1,0,home,,8,3,0,,1.08,0.78,5.8,5.0,Congo DR,Uzbekistan
+22,Group,Group stage,1,L,England,Croatia,2026-06-17,Rose Bowl Pasadena,1,1,draw,,10,4,0,,1.68,1.28,8.8,7.5,England,Croatia
+21,Group,Group stage,1,L,Ghana,Panama,2026-06-17,Mercedes-Benz Stadium Atlanta,1,1,draw,,8,4,0,,1.08,0.98,5.9,5.1,Ghana,Panama
+41,Group,Group stage,1,L,England,Ghana,2026-06-22,Rose Bowl Pasadena,2,0,home,,9,3,0,,2.14,0.64,8.8,5.9,England,Ghana
+45,Group,Group stage,1,L,Panama,Croatia,2026-06-22,Mercedes-Benz Stadium Atlanta,0,2,away,,9,3,0,,0.58,1.78,5.1,7.5,Panama,Croatia
+61,Group,Group stage,1,L,Panama,England,2026-06-27,Rose Bowl Pasadena,0,2,away,,9,3,0,,0.42,2.18,5.1,8.8,Panama,England
+67,Group,Group stage,1,L,Croatia,Ghana,2026-06-27,Mercedes-Benz Stadium Atlanta,2,0,home,,9,3,0,,1.68,0.68,7.5,5.9,Croatia,Ghana
+73,Knockout,Round of 32,1,,Mexico,Switzerland,2026-07-03,Los Angeles,0,1,away,away,9,3,0,False,1.04,1.28,7.0,7.2,Mexico,Switzerland
+74,Knockout,Round of 32,1,,Germany,Czechia,2026-07-03,East Rutherford,3,0,home,home,10,3,0,False,2.63,0.58,8.6,6.0,Germany,Czechia
+75,Knockout,Round of 32,1,,Netherlands,Morocco,2026-07-04,Pasadena,2,1,home,home,10,4,0,False,1.68,0.94,8.2,7.5,Netherlands,Morocco
+76,Knockout,Round of 32,1,,Brazil,Sweden,2026-07-04,Dallas,2,1,home,home,11,4,0,False,1.94,1.12,9.5,7.5,Brazil,Sweden
+77,Knockout,Round of 32,1,,France,IR Iran,2026-07-04,Miami,3,0,home,home,9,3,0,False,2.64,0.48,9.3,6.1,France,IR Iran
+78,Knockout,Round of 32,1,,Côte d'Ivoire,Norway,2026-07-04,Atlanta,0,2,away,away,9,4,0,False,0.78,1.88,7.0,8.0,Côte d'Ivoire,Norway
+79,Knockout,Round of 32,1,,Korea Republic,Scotland,2026-07-05,Seattle,1,0,home,home,9,3,0,False,1.28,0.94,7.1,6.6,Korea Republic,Scotland
+80,Knockout,Round of 32,1,,England,Senegal,2026-07-05,Philadelphia,2,0,home,home,9,3,0,False,1.84,0.78,8.8,6.8,England,Senegal
+81,Knockout,Round of 32,1,,United States,Algeria,2026-07-05,Kansas City,2,0,home,home,9,3,0,False,1.72,0.64,7.3,6.5,United States,Algeria
+82,Knockout,Round of 32,1,,Belgium,Ecuador,2026-07-06,Arlington,2,0,home,home,9,3,0,False,1.78,0.68,8.0,7.0,Belgium,Ecuador
+83,Knockout,Round of 32,1,,Colombia,Croatia,2026-07-06,Miami,2,1,home,home,10,4,1,False,1.52,1.08,7.9,7.5,Colombia,Croatia
+84,Knockout,Round of 32,1,,Spain,Austria,2026-07-06,Dallas,3,0,home,home,11,3,0,False,2.44,0.64,9.0,6.8,Spain,Austria
+85,Knockout,Round of 32,1,,Canada,Japan,2026-07-07,Vancouver,1,0,home,home,9,3,0,False,1.38,1.04,7.5,7.1,Canada,Japan
+86,Knockout,Round of 32,1,,Argentina,Uruguay,2026-07-07,Miami,2,1,home,home,10,4,0,False,1.88,1.08,9.0,7.9,Argentina,Uruguay
+87,Knockout,Round of 32,1,,Portugal,Australia,2026-07-07,Foxborough,3,0,home,home,9,3,0,False,2.44,0.58,8.5,6.4,Portugal,Australia
+88,Knockout,Round of 32,1,,Türkiye,Egypt,2026-07-07,Atlanta,2,1,home,home,10,4,0,False,1.62,1.08,7.5,7.0,Türkiye,Egypt
+89,Knockout,Round of 16,2,,Switzerland,Germany,2026-07-10,Philadelphia,0,2,away,away,10,4,0,False,0.94,1.88,7.2,8.6,Switzerland,Germany
+90,Knockout,Round of 16,2,,Netherlands,Brazil,2026-07-10,Seattle,1,2,away,away,11,4,0,False,1.28,1.82,8.2,9.5,Netherlands,Brazil
+91,Knockout,Round of 16,2,,France,Norway,2026-07-11,East Rutherford,2,1,home,home,11,4,0,False,1.88,1.38,9.3,8.0,France,Norway
+92,Knockout,Round of 16,2,,Korea Republic,England,2026-07-11,Los Angeles,0,2,away,away,10,3,0,False,0.94,1.72,7.1,8.8,Korea Republic,England
+93,Knockout,Round of 16,2,,United States,Belgium,2026-07-12,Kansas City,1,0,home,home,10,4,0,False,1.18,1.12,7.3,8.0,United States,Belgium
+94,Knockout,Round of 16,2,,Colombia,Spain,2026-07-12,Miami,1,2,away,away,11,4,1,False,1.08,1.64,7.9,9.0,Colombia,Spain
+95,Knockout,Round of 16,2,,Canada,Argentina,2026-07-13,Dallas,0,2,away,away,9,3,0,False,0.82,1.88,7.5,9.0,Canada,Argentina
+96,Knockout,Round of 16,2,,Portugal,Türkiye,2026-07-13,Arlington,2,1,home,home,10,4,0,False,1.68,1.12,8.5,7.5,Portugal,Türkiye
+97,Knockout,Quarter-final,4,,Germany,Brazil,2026-07-17,Los Angeles,1,2,away,away,11,4,0,False,1.38,1.72,8.6,9.5,Germany,Brazil
+98,Knockout,Quarter-final,4,,France,England,2026-07-18,East Rutherford,2,1,home,home,10,4,0,False,1.72,1.38,9.3,8.8,France,England
+99,Knockout,Quarter-final,4,,United States,Spain,2026-07-18,Dallas,1,2,away,away,10,4,0,False,1.02,1.58,7.3,9.0,United States,Spain
+100,Knockout,Quarter-final,4,,Argentina,Portugal,2026-07-19,Miami,2,1,home,home,10,4,0,False,1.64,1.28,9.0,8.5,Argentina,Portugal
+101,Knockout,Semi-final,8,,Brazil,France,2026-07-22,Dallas,0,1,away,away,9,3,0,False,1.24,1.44,9.5,9.3,Brazil,France
+102,Knockout,Semi-final,8,,Spain,Argentina,2026-07-22,Los Angeles,1,2,away,away,10,4,0,False,1.28,1.48,9.0,9.0,Spain,Argentina
+103,Knockout,Third-place playoff,8,,Brazil,Spain,2026-07-25,Dallas,2,1,home,home,9,3,0,False,1.44,1.28,9.5,9.0,Brazil,Spain
+104,Knockout,Final,16,,France,Argentina,2026-07-26,MetLife Stadium East Rutherford,2,1,home,home,10,3,0,False,1.72,1.38,9.3,9.0,France,Argentina
