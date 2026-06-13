@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AI Study Buddy</title>
+<style>
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f6fb;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+  }
+  .container {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    padding: 32px;
+    max-width: 600px;
+    width: 100%;
+  }
+  h1 {
+    color: #4338ca;
+    text-align: center;
+  }
+  input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  button {
+    background: #4338ca;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 8px;
+  }
+  button:hover { background: #3730a3; }
+  .response {
+    background: #f0f0ff;
+    border-radius: 8px;
+    padding: 16px;
+    margin-top: 16px;
+    white-space: pre-wrap;
+    line-height: 1.5;
+  }
+  .loading { color: #888; font-style: italic; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>🎓 AI Study Buddy</h1>
+  <p>Type any topic you're studying and get a simple explanation plus a quiz question!</p>
+
+  <input type="text" id="topic" placeholder="e.g. Photosynthesis, Newton's Laws, Recursion...">
+  <button onclick="explainTopic()">Explain It</button>
+
+  <div id="explanation" class="response" style="display:none;"></div>
+
+  <div id="quizSection" style="display:none; margin-top:16px;">
+    <textarea id="userAnswer" placeholder="Type your answer to the quiz question here..."></textarea>
+    <button onclick="checkAnswer()">Submit Answer</button>
+    <div id="feedback" class="response" style="display:none;"></div>
+  </div>
+</div>
+
+<script>
+let currentTopic = "";
+let currentQuestion = "";
+
+async function explainTopic() {
+  currentTopic = document.getElementById("topic").value;
+  if (!currentTopic) return;
+
+  const expDiv = document.getElementById("explanation");
+  expDiv.style.display = "block";
+  expDiv.innerHTML = '<span class="loading">Thinking...</span>';
+  document.getElementById("quizSection").style.display = "none";
+  document.getElementById("feedback").style.display = "none";
+
+  const res = await fetch("/explain", {
+    method: "POST",
+    headers: {"Content-Type": "application/json"},
+    body: JSON.stringify({topic: currentTopic})
+  });
+  const data = await res.json();
+  expDiv.innerText = data.reply;
+  currentQuestion = data.reply;
+
+  document.getElementById("quizSection").style.display = "block";
+  document.getElementById("userAnswer").value = "";
+}
+
+async function checkAnswer() {
+  const userAnswer = document.getElementById("userAnswer").value;
+  const fbDiv = document.getElementById("feedback");
+  fbDiv.style.display = "block";
+  fbDiv.innerHTML = '<span class="loading">Checking...</span>';
+
+  const res = await fetch("/check", {
+    method: "POST",
+    headers: {"Content-Type": "application/json"},
+    body: JSON.stringify({topic: currentTopic, question: currentQuestion, answer: userAnswer})
+  });
+  const data = await res.json();
+  fbDiv.innerText = data.reply;
+}
+</script>
+</body>
+</html>
