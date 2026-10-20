@@ -1,0 +1,48 @@
+{
+  "test_metrics": {
+    "auc": 0.744,
+    "brier": 0.196,
+    "sensitivity": 0.731,
+    "specificity": 0.584,
+    "ci95": {
+      "auc": [
+        0.672,
+        0.809
+      ],
+      "sensitivity": [
+        0.625,
+        0.833
+      ],
+      "specificity": [
+        0.496,
+        0.672
+      ]
+    },
+    "n_test": 192,
+    "positives_test": 67
+  },
+  "threshold": 0.27,
+  "reference_auc_with_glucose": 0.824,
+  "cv_comparison": [
+    {
+      "model": "Logistic regression, no-lab (deployed)",
+      "cv_auc": 0.743,
+      "cv_brier": 0.193
+    },
+    {
+      "model": "Random forest, no-lab",
+      "cv_auc": 0.737,
+      "cv_brier": 0.193
+    },
+    {
+      "model": "Gradient boosting, no-lab",
+      "cv_auc": 0.74,
+      "cv_brier": 0.194
+    },
+    {
+      "model": "Logistic regression, all 8 features incl. glucose (reference)",
+      "cv_auc": 0.831,
+      "cv_brier": 0.157
+    }
+  ]
+}

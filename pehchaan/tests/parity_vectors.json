@@ -1,0 +1,252 @@
+[
+  {
+    "input": {
+      "Pregnancies": 13.0,
+      "BloodPressure": 72.0,
+      "BMI": 31.2,
+      "DiabetesPedigreeFunction": 0.465,
+      "Age": 38.0
+    },
+    "expected": 0.5522873458204508
+  },
+  {
+    "input": {
+      "Pregnancies": 4.0,
+      "BloodPressure": 88.0,
+      "BMI": 34.5,
+      "DiabetesPedigreeFunction": 0.598,
+      "Age": 28.0
+    },
+    "expected": 0.37325170540299635
+  },
+  {
+    "input": {
+      "Pregnancies": 2.0,
+      "BloodPressure": 76.0,
+      "BMI": 31.6,
+      "DiabetesPedigreeFunction": 0.649,
+      "Age": 23.0
+    },
+    "expected": 0.22726449065605286
+  },
+  {
+    "input": {
+      "Pregnancies": 5.0,
+      "BloodPressure": 84.0,
+      "BMI": 35.0,
+      "DiabetesPedigreeFunction": 0.286,
+      "Age": 35.0
+    },
+    "expected": 0.3989797783819191
+  },
+  {
+    "input": {
+      "Pregnancies": 4.0,
+      "BloodPressure": 78.0,
+      "BMI": 37.0,
+      "DiabetesPedigreeFunction": 0.264,
+      "Age": 31.0
+    },
+    "expected": 0.38577149253956816
+  },
+  {
+    "input": {
+      "Pregnancies": 2.0,
+      "BloodPressure": 54.0,
+      "BMI": 26.8,
+      "DiabetesPedigreeFunction": 0.455,
+      "Age": 27.0
+    },
+    "expected": 0.13085048273164862
+  },
+  {
+    "input": {
+      "Pregnancies": 4.0,
+      "BloodPressure": 84.0,
+      "BMI": 31.2,
+      "DiabetesPedigreeFunction": 0.252,
+      "Age": 30.0
+    },
+    "expected": 0.2471610831980154
+  },
+  {
+    "input": {
+      "Pregnancies": 0.0,
+      "BloodPressure": 60.0,
+      "BMI": 21.7,
+      "DiabetesPedigreeFunction": 0.735,
+      "Age": 67.0
+    },
+    "expected": 0.2284748545257366
+  },
+  {
+    "input": {
+      "Pregnancies": 7.0,
+      "BloodPressure": 64.0,
+      "BMI": 27.4,
+      "DiabetesPedigreeFunction": 0.294,
+      "Age": 40.0
+    },
+    "expected": 0.27446334969396186
+  },
+  {
+    "input": {
+      "Pregnancies": 2.0,
+      "BloodPressure": 70.0,
+      "BMI": 20.4,
+      "DiabetesPedigreeFunction": 0.235,
+      "Age": 27.0
+    },
+    "expected": 0.06341227313946114
+  },
+  {
+    "input": {
+      "Pregnancies": 3.0,
+      "BloodPressure": 78.0,
+      "BMI": 28.4,
+      "DiabetesPedigreeFunction": 0.323,
+      "Age": 34.0
+    },
+    "expected": 0.20041876695455627
+  },
+  {
+    "input": {
+      "Pregnancies": 11.0,
+      "BloodPressure": 94.0,
+      "BMI": 36.6,
+      "DiabetesPedigreeFunction": 0.254,
+      "Age": 51.0
+    },
+    "expected": 0.7154473945199956
+  },
+  {
+    "input": {
+      "Pregnancies": 0.0,
+      "BloodPressure": 70.0,
+      "BMI": 33.2,
+      "DiabetesPedigreeFunction": 0.17,
+      "Age": 22.0
+    },
+    "expected": 0.15430863340711123
+  },
+  {
+    "input": {
+      "Pregnancies": 3.0,
+      "BloodPressure": 74.0,
+      "BMI": 26.3,
+      "DiabetesPedigreeFunction": 0.107,
+      "Age": 24.0
+    },
+    "expected": 0.10851683205086483
+  },
+  {
+    "input": {
+      "Pregnancies": 4.0,
+      "BloodPressure": 92.0,
+      "BMI": 31.2,
+      "DiabetesPedigreeFunction": 0.539,
+      "Age": 61.0
+    },
+    "expected": 0.5213017265463761
+  },
+  {
+    "input": {
+      "Pregnancies": 1.0,
+      "BloodPressure": null,
+      "BMI": 43.3,
+      "DiabetesPedigreeFunction": 0.282,
+      "Age": 41.0
+    },
+    "expected": 0.5472593566686457
+  },
+  {
+    "input": {
+      "Pregnancies": 0.0,
+      "BloodPressure": null,
+      "BMI": 43.2,
+      "DiabetesPedigreeFunction": 0.27,
+      "Age": 26.0
+    },
+    "expected": 0.4035244290888761
+  },
+  {
+    "input": {
+      "Pregnancies": 0.0,
+      "BloodPressure": 80.0,
+      "BMI": 36.5,
+      "DiabetesPedigreeFunction": 0.33,
+      "Age": 26.0
+    },
+    "expected": 0.26078345489440263
+  },
+  {
+    "input": {
+      "Pregnancies": 0.0,
+      "BloodPressure": null,
+      "BMI": 21.1,
+      "DiabetesPedigreeFunction": 0.342,
+      "Age": 25.0
+    },
+    "expected": 0.05742889292770806
+  },
+  {
+    "input": {
+      "Pregnancies": 6.0,
+      "BloodPressure": 90.0,
+      "BMI": 35.7,
+      "DiabetesPedigreeFunction": 0.674,
+      "Age": 28.0
+    },
+    "expected": 0.475050635837132
+  },
+  {
+    "input": {
+      "Pregnancies": 3.0,
+      "BloodPressure": 62.0,
+      "BMI": 22.6,
+      "DiabetesPedigreeFunction": 0.142,
+      "Age": 21.0
+    },
+    "expected": 0.06688930890895627
+  },
+  {
+    "input": {
+      "Pregnancies": 3.0,
+      "BloodPressure": 78.0,
+      "BMI": 21.1,
+      "DiabetesPedigreeFunction": 0.268,
+      "Age": 55.0
+    },
+    "expected": 0.16817791014825292
+  },
+  {
+    "input": {
+      "Pregnancies": 2.0,
+      "BloodPressure": 64.0,
+      "BMI": 29.7,
+      "DiabetesPedigreeFunction": 0.368,
+      "Age": 21.0
+    },
+    "expected": 0.14505677921740937
+  },
+  {
+    "input": {
+      "Pregnancies": 9.0,
+      "BloodPressure": 84.0,
+      "BMI": 30.8,
+      "DiabetesPedigreeFunction": 0.831,
+      "Age": 32.0
+    },
+    "expected": 0.47495754164500276
+  },
+  {
+    "input": {
+      "Pregnancies": 11.0,
+      "BloodPressure": 76.0,
+      "BMI": 33.3,
+      "DiabetesPedigreeFunction": 1.353,
+      "Age": 51.0
+    },
+    "expected": 0.7917349817230197
+  }
+]

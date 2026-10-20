@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pehchaan</title>
+  <meta name="description" content="Early diabetes risk screening without a lab test. Explainable, bilingual (English and Urdu), runs fully in the browser.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&family=Noto+Nastaliq+Urdu:wght@400;600&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230B1F3B'/%3E%3Ccircle cx='16' cy='16' r='7' fill='none' stroke='%2300C2FF' stroke-width='3'/%3E%3C/svg%3E">
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <div class="brand">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8"/><circle cx="16" cy="16" r="7"/></svg>
+        <span data-i18n="app_name">Pehchaan</span>
+      </div>
+      <div class="topbar-actions">
+        <button id="langBtn" class="btn ghost" type="button" data-i18n="lang_toggle">اردو</button>
+        <button id="themeBtn" class="btn ghost" type="button" aria-label="Toggle light or dark theme">
+          <span data-i18n="theme_toggle">Theme</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <h1 data-i18n="tagline">Early diabetes risk screening, no lab test needed.</h1>
+      <p class="lead" data-i18n="hero_body"></p>
+      <p class="notice"><strong data-i18n="disclaimer"></strong> <span data-i18n="privacy"></span></p>
+    </section>
+
+    <div class="grid">
+      <!-- Step 1: questionnaire -->
+      <section class="card" id="formCard">
+        <h2 data-i18n="form_title">About you</h2>
+        <form id="riskForm" novalidate>
+          <fieldset class="field">
+            <legend data-i18n="sex">Sex</legend>
+            <div class="seg">
+              <label><input type="radio" name="sex" value="female" checked><span data-i18n="female">Female</span></label>
+              <label><input type="radio" name="sex" value="male"><span data-i18n="male">Male</span></label>
+            </div>
+          </fieldset>
+
+          <div class="row">
+            <label class="field"><span data-i18n="age">Age</span>
+              <input id="age" type="number" inputmode="numeric" min="18" max="110" required></label>
+            <label class="field" id="pregField"><span data-i18n="pregnancies">Pregnancies</span>
+              <input id="preg" type="number" inputmode="numeric" min="0" max="20" value="0"></label>
+          </div>
+
+          <div class="row">
+            <label class="field"><span data-i18n="height">Height (cm)</span>
+              <input id="height" type="number" inputmode="decimal" min="120" max="220" required></label>
+            <label class="field"><span data-i18n="weight">Weight (kg)</span>
+              <input id="weight" type="number" inputmode="decimal" min="30" max="250" required></label>
+          </div>
+          <p class="hint"><span data-i18n="bmi_label">Body mass index</span>: <output id="bmiOut" class="mono">–</output></p>
+
+          <div class="field">
+            <label for="bp" data-i18n="bp">Diastolic blood pressure</label>
+            <div class="inline">
+              <input id="bp" type="number" inputmode="numeric" min="40" max="140">
+              <label class="check"><input id="bpUnknown" type="checkbox"><span data-i18n="unknown">I don't know</span></label>
+            </div>
+          </div>
+
+          <fieldset class="field">
+            <legend data-i18n="family">Family history</legend>
+            <div class="seg three">
+              <label><input type="radio" name="family" value="none" checked><span data-i18n="fam_none">None</span></label>
+              <label><input type="radio" name="family" value="one"><span data-i18n="fam_one">One</span></label>
+              <label><input type="radio" name="family" value="multiple"><span data-i18n="fam_multiple">Two or more</span></label>
+            </div>
+          </fieldset>
+
+          <p id="formError" class="error" role="alert" hidden></p>
+          <div class="actions">
+            <button class="btn primary" type="submit" data-i18n="submit">Check my risk</button>
+            <button class="btn ghost" type="reset" data-i18n="reset">Start over</button>
+          </div>
+        </form>
+      </section>
+
+      <!-- Step 2: result and explanation -->
+      <section class="card" id="resultCard" hidden aria-live="polite">
+        <h2 data-i18n="result_title">Your result</h2>
+        <div id="tier" class="tier"></div>
+        <p id="tierMsg"></p>
+
+        <div class="gauge" aria-hidden="true">
+          <div class="gauge-fill" id="gaugeFill"></div>
+          <div class="gauge-thr" id="gaugeThr"><span data-i18n="threshold_lbl">Threshold</span></div>
+        </div>
+        <p class="hint"><span data-i18n="score">Model score</span> <b id="scoreOut" class="mono"></b> · <span id="pctOut"></span></p>
+        <ul id="warnings" class="warnings"></ul>
+
+        <h3 data-i18n="why_title">What drove this result</h3>
+        <p class="hint" data-i18n="why_note"></p>
+        <div id="bars" class="bars"></div>
+
+        <h3 data-i18n="whatif_title">What if my weight changed?</h3>
+        <input id="whatIf" type="range" step="1">
+        <p id="whatIfOut" class="mono-ish"></p>
+        <p class="hint" data-i18n="whatif_note"></p>
+
+        <button id="printBtn" class="btn ghost" type="button" data-i18n="print">Print or save summary</button>
+      </section>
+    </div>
+
+    <div class="grid">
+      <!-- Step 3: rule-based check of an existing lab result -->
+      <section class="card">
+        <h2 data-i18n="reading_title">Already have a blood sugar result?</h2>
+        <p class="hint" data-i18n="reading_note"></p>
+        <form id="readingForm" novalidate>
+          <label class="field"><span data-i18n="reading_type">Test type</span>
+            <select id="readingType">
+              <option value="fasting" data-i18n="t_fasting">Fasting</option>
+              <option value="ogtt" data-i18n="t_ogtt">OGTT</option>
+              <option value="hba1c" data-i18n="t_hba1c">HbA1c</option>
+              <option value="random" data-i18n="t_random">Random</option>
+            </select></label>
+          <div class="row">
+            <label class="field"><span data-i18n="reading_value">Result</span>
+              <input id="readingValue" type="number" inputmode="decimal" step="0.1" required></label>
+            <label class="field" id="unitField"><span data-i18n="unit">Unit</span>
+              <select id="readingUnit"><option value="mgdl">mg/dL</option><option value="mmol">mmol/L</option></select></label>
+          </div>
+          <label class="check" id="symptomField" hidden><input id="symptoms" type="checkbox"><span data-i18n="symptoms"></span></label>
+          <div class="actions"><button class="btn primary" type="submit" data-i18n="check_reading">Check result</button></div>
+          <p id="readingOut" class="reading-out" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <!-- Model card -->
+      <section class="card">
+        <h2 data-i18n="how_title">How it works</h2>
+        <p id="howBody"></p>
+        <img src="evaluation.png" alt="ROC curve and calibration plot of the model on the held-out test set" class="figure">
+        <h3 data-i18n="limits_title">Known limitations</h3>
+        <ul class="limits">
+          <li id="lim1"></li><li id="lim2"></li><li id="lim3"></li><li id="lim4"></li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- Only visible when printing -->
+    <section id="printSummary" class="print-only"></section>
+  </main>
+
+  <footer class="wrap footer"><p data-i18n="footer"></p></footer>
+
+  <script src="model.js"></script>
+  <script src="risk.js"></script>
+  <script src="i18n.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
